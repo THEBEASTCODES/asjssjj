@@ -1,0 +1,118 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:wght@500&display=swap');
+:root{
+    --dark: #374151;
+    --darker: #1F2937;
+    --darkest:#111827;
+    --grey:#6B7280;
+    --pink: #EC4899;
+    --purple: #8B5CF6;
+    --light:#eee;
+    font-family:'Fira Sans',sans-serif ;
+    
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    min-height: 100vh;
+    background-color: var(--dark);
+    color: #fff;
+}
+header{
+    width: 100%;
+    max-width: 800px;
+    padding: 2rem 1rem;
+    margin: 0 auto;
+}
+
+header h1{
+    color: var(--grey);
+    font-size: 2.5rem;
+    font-weight: 300;
+    margin-bottom: 1rem;
+    font-family:'Fira Sans',sans-serif;
+    
+    
+}
+#task-id{
+    display: flex;
+    
+
+}
+input,button{
+    appearance: none;
+    background:none;
+    border: none;
+}
+#new-input-task{
+    flex: 1;
+    font-size: 1.5rem;
+    padding: 1rem;
+    border-radius: 10px;
+    background-color: var(--darkest);
+    color: #fff;
+
+}
+#new-input-task::placeholder{
+    color:var(--grey);
+}
+
+#new-submit-task{
+font-size: 2.0rem;
+margin:10px;
+font-weight: 700;
+background-image: linear-gradient(to right, var(--pink), var(--purple));
+-webkit-background-clip: text;
+color: transparent;
+cursor: pointer;
+}
+
+main{
+    width: 100%;
+    max-width: 800px;
+    padding: 2rem 1rem;
+    margin: 0 auto;  
+}
+
+main h2 {
+        font-size: 1.5rem;
+        font-weight: 300;
+        color: var(--grey);
+        margin-bottom: 1rem;
+    }
+.task{
+    display: flex;
+    justify-content: space-between;
+    background-color: var(--darker);
+    margin-bottom: 1rem;
+    padding: 1rem;
+    border-radius: 1rem;
+}
+
+.edit{
+    background-image: linear-gradient(to right, var(--pink), var(--purple));
+-webkit-background-clip: text;
+color: transparent;
+cursor: pointer;
+font-weight: 500;
+}
+.delete{
+    background-image: linear-gradient(to right, var(--pink), var(--purple));
+-webkit-background-clip: text;
+color: transparent;
+cursor: pointer;
+padding-left: 10px;
+}
+.content{
+    flex: 1;
+}
+.text{
+    font-size: 1.5rem;
+    color: #fff;
+}
+
+
+
